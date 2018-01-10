@@ -1,0 +1,20 @@
+---
+# common vars file for mysql_server
+mysql_daemon: mysql
+mysql_packages:
+  - mysql-common
+  - mysql-server
+
+#Credentials
+mysql_root_pass: ""
+mysql_root_username: root
+mysql_users_pass: mbadmin
+
+# Databases.
+mysql_databases:
+  - wso2_mb
+  - userdb
+  - regdb
+
+mysql_users:
+  - mbadmin

@@ -1,0 +1,9 @@
+--- 
+  - name: Copy the registry.xml
+    template: src=registry.xml.j2 dest={{ doc_root }}/repository/conf/ owner="root" group="root" mode=0644
+
+  - name: Copy the master-datasource.xml 
+    template: src=master-datasources.xml.j2  dest={{ doc_root }}/repository/conf/datasources/ owner="root" group="root" mode=0644
+
+  - name: Copy the user-mgt.XML
+    template: src=user-mgt.xml.j2 dest={{ doc_root }}/repository/conf/ owner="root" group="root" mode=0644

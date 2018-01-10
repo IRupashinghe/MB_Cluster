@@ -1,0 +1,6 @@
+---
+db_host: 172.31.8.218
+db_port: 3306
+db_user: mbadmin
+db_password: mbadmin 
+doc_root: /opt/MB/wso2mb-3.2.0

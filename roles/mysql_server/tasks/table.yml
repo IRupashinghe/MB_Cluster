@@ -1,0 +1,20 @@
+---
+#WSO2_USER_DB Queries
+- name: Excuting Query 1 in WSO2_USER_DB
+  mysql_db:
+    state: import
+    name: wso2_mb
+    target: /opt/MB/wso2mb-3.2.0/dbscripts/mb-store/mysql-mb.sql
+- name: Excuting Query 1 in WSO2_USER_DB
+  mysql_db:
+    state: import
+    name: userdb
+    target: /opt/MB/wso2mb-3.2.0/dbscripts/mysql5.7.sql
+
+#REGISTRY_DB queries
+- name: Excuting Query 1 in WSO2_USER_DB
+  mysql_db:
+    state: import
+    name: regdb
+    target: /opt/MB/wso2mb-3.2.0/dbscripts/mysql5.7.sql
+
