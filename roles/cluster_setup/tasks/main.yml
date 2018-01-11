@@ -1,7 +1,7 @@
 --- 
 
   - name: Copy the Axis2.xml
-    template: src=axis2.xml.j2 dest={{ doc_root }}/repository/conf/axis2/ owner="root" group="root" mode=0644
+    template: src=axis2.xml.j2 dest={{ doc_root }}/repository/conf/axis2/axis2.xml owner="root" group="root" mode=0644
 
   - name: Copy the broker.XMl
-    template: src=broker.xml.j2 dest={{ doc_root }}/repository/conf/ owner="root" group="root" mode=0644
+    template: src=broker.xml.j2 dest={{ doc_root }}/repository/conf/broker.xml owner="root" group="root" mode=0644

@@ -3,13 +3,6 @@
   gather_facts: no
   tasks:
     - setup:
-- hosts: dbservers
-  gather_facts: no
-  become: true
-  become_user: root
-  roles:
-    - mb_setup
-    - mysql_server
     
 
 - hosts: cluster
@@ -17,11 +10,7 @@
   become: true
   become_user: root
   roles:
-    - JAVA8
-    - mb_setup
-    - jar
     - db_setup
-    - cluster_setup
 
 
 
